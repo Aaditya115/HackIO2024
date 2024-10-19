@@ -21,7 +21,7 @@
   
 
 4. Work distribution
-     Grapich Design:
+     Grapich Design + Backend Integration:
          Stevie
          Raghav
      Backend:
@@ -29,4 +29,9 @@
        Aaditya
 
 5. TODO
-       1. Add here with name of person you want to do the task (or anyone)
+       1. Dual Camera Integration in Flutter(Raghav)
+       2. Front Facing Backend (selfie)(Eli)
+       3. Back Facing Backend (Aditia)
+       4. Google Maps Integration and Main App Design(Stevie)
+       5. Full Integration (Stevie and Raghav)
+   
