@@ -88,7 +88,7 @@ while cap.isOpened():
             y = angles[1] * 360
             z = angles[2] * 360
 
-            # # See where the user's head is tilting
+            # # See where the user's head is tilting when camrea is centered
             # if y < -10:
             #     text = "Looking Left"
             # elif y > 10:
@@ -100,7 +100,7 @@ while cap.isOpened():
             # else:
             #     text = "Forward"
 
-            # See where the user's head is tilting
+            # See where the user's head is tilting when camrea is to the right of the driver
             if -20 < y < -10:
                 text = "Looking Forward"
             elif y > -10:
@@ -137,7 +137,8 @@ while cap.isOpened():
         if len(State) > 5000:
             check = True
             for i in State[len(State) - 5000: len(State)]:
-                if not State.index(i) == State.index(i+1):
+                x = State.index(i)
+                if not i == State.index(x + 1):
                     check = False
             if check:
                 break #Sound effect from phone is to be put here
